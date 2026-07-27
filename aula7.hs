@@ -82,7 +82,7 @@ cr01_A_T_Char f g (x:xs) = f (g x) (cr01_A_T_Char f g xs)
 {-como transformá-las em uma função genérica? -}
 
 filtraT::[(Bool, String)]->[String]
-[] = []
+filtraT [] = []
 filtraT (x:xs)
   |fst x = snd x : filtraT xs
   |otherwise = filtraT xs
