@@ -28,7 +28,7 @@ filtraMenor (m,x:xs)
 --05 função que recebe uma dupla com o menor e a lista restante e retorna uma lista ordenada
 ordenaL :: (Int, [Int])->[Int]
 ordenaL (m,[]) = [m]
-ordenaL (m,xs) = m : ordenaL xs
+ordenaL (m,xs) = m : ordena xs
 
 --06 função interface para ordenar a lista de entrada
 ordena::[Int]->[Int]
@@ -38,4 +38,3 @@ ordena xs = ordenaL (menor, resto)
     where
         menor = menorL xs
         resto = filtraMenor (menor, xs)
-
