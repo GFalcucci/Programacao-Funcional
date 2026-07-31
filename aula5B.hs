@@ -1,3 +1,5 @@
+import Data.Char
+
 {- objetivo desta aula: Trabalhar os tipos lista e tuplas -}
 
 --01- Operador que defina o menor entre dois inteiros
